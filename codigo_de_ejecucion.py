@@ -26,7 +26,7 @@ def calidad_datos(temp):
 def creacion_variables(df):
     temp = df.copy()
     temp.vivienda = temp.vivienda.replace(['ANY','NONE','OTHER'],'MORTGAGE')
-    temp.finalidad = temp.finalidad.replace(['wedding','educational','renewable_energy'],'otros')
+    temp.finalidad = temp.finalidad.replace(['wedding','educational','renewable_energy'],'other')
     return(temp)
 
 
